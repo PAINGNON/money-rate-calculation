@@ -23,13 +23,13 @@
 </head>
 <body>
  <div class="text-center text-danger mt-5 fw-bold" id="rate">อัตราการแลกเปลี่ยน</div>	
- <div class="justify-content-center input-group mb-3 mt-3">
+<!--  <div class="justify-content-center input-group mb-3 mt-3">
  	<select class="input-group-text" id="currency-one" disabled >
   		<option value="THB"selected>THB</option>
 		<option value="MMK">MMK</option>       
   	</select>
-<!--   	<input  class="input-group-text" id="amount-one" value="1"> -->
-</div>
+  	<input  class="input-group-text" id="amount-one" value="1">
+</div> -->
 <div class="justify-content-center input-group mb-3 mt-3">
 	<select class="input-group-text" id="currency-two"disabled >
   		<option value="THB">THB</option>
@@ -43,7 +43,12 @@
 	
 <form>
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <label for="exampleInputEmail1" class="form-label">
+      <select class="input-group-text" id="currency-one" disabled >
+  		<option value="THB"selected>THB</option>
+		<option value="MMK">MMK</option>       
+  	</select>
+    </label>
     <input type=number" class="form-control" id="amount-one" value="1">
     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
   </div>
